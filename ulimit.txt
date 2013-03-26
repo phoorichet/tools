@@ -1,0 +1,10 @@
+The step to increase the maximun number of file desciptors in Mac OS:
+1. edit file /etc/launchd.conf (create a new one if it does not exist)
+2. put the following line
+    imit maxfiles 65535 65535
+
+If it does not work, more wokr need to be done as followed:
+1. edit file /usr/include/sys/_stuct.h
+    < #define   __DARWIN_FD_SETSIZE 65535
+    to
+    > #define   __DARWIN_FD_SETSIZE 1024
