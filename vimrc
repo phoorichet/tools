@@ -28,4 +28,6 @@ set ignorecase                  " case (in)sensitive search
 set smartcase                   " smart search
 set hlsearch                    " highlight searches
 
-set number
+set number                      " show line number
+set mouse=a                     " allow mouse clicks to change cursor position
+set showmatch                   " briefly jump to matching brackets
